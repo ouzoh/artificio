@@ -1,11 +1,11 @@
 '''
 
  similar_images_AE.py (author: Anson Wong / git: ankonzoid)
-
+ 
  Image similarity recommender system using an autoencoder-clustering model.
-
+ 
  Autoencoder method:
-  1) Train an autoencoder (simple/Conv) on training images in 'db/images_training'
+  1) Train an autoencoder (simple/Conv) on training images in 'db/images_training' 
   2) Saves trained autoencoder, encoder, and decoder to 'db/models'
 
  Clustering method:
@@ -14,7 +14,7 @@
   5) Encode query images in 'query', and predict their NN using our trained kNN model
   6) Compute a score for each inventory encoding relative to our query encoding (centroid/closest)
   7) Make k-recommendations by cloning top-k inventory images into 'answer'
-
+  
 '''
 import sys, os, shutil
 import numpy as np
